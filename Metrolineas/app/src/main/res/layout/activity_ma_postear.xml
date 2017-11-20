@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metroapp.codering.metrolineas.Ma_postear">
+
+    <ImageButton
+        android:id="@+id/btn_seleccionar_imagen"
+        android:layout_width="316dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Titulo"
+        android:id="@+id/txt_titulo"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seleccionar_imagen"
+        />
+    <EditText
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:hint="Descripcion problema"
+        android:id="@+id/txt_publicacion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo"
+        app:layout_constraintHorizontal_bias="0.506"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_publicar"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:layout_width="383dp"
+        android:layout_height="66dp"
+        android:id="@+id/btn_publicar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Publicar"/>
+    
+    
+</android.support.constraint.ConstraintLayout>

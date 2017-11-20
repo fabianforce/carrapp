@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Metrolineas</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="RUTAS">
+        <item>P8</item>
+        <item>T3</item>
+
+
+    </string-array>
+
+    <string name="not_summary_on_position_sender">Se está enviado la posición de este vehículo</string>
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "955708904627",
+    "firebase_url": "https://metroapp-af85b.firebaseio.com",
+    "project_id": "metroapp-af85b",
+    "storage_bucket": "metroapp-af85b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955708904627:android:909502078f1df202",
+        "android_client_info": {
+          "package_name": "com.metroapp.codering.metrolineas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955708904627-k0kp76p15549qggmgmi986930etea2lm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metroapp.codering.metrolineas",
+            "certificate_hash": "e4f4c462f6cdd7f3560ca48256f187ef3125ce30"
+          }
+        },
+        {
+          "client_id": "955708904627-ilo5vbr5ju4l6vft80kp2fvbe34rpa32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfZRJ3pS18RXksbNfUNLFDlrJmmxxjXYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955708904627-ilo5vbr5ju4l6vft80kp2fvbe34rpa32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

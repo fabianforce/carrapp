@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metroapp.codering.metrolineas.MainActivity"
+    android:background="@drawable/img_1">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"><!-- orientation: vert pone todos los componentes verticales, texfield,imagenes.. para el layour-->
+
+       <ImageView
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_gravity="center"
+           android:layout_marginBottom="50dp"
+          android:src="@drawable/img_2"
+
+           />
+
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity ="center"
+            android:hint="Usuario"
+            android:background="@drawable/textcustom"
+            android:id="@+id/txt_user"
+            android:text="fabiancasti_94@hotmail.com"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity ="center"
+            android:hint="Contraseña"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt_contra"
+            android:text="Fabian0610"
+            android:background="@drawable/textcustom"/> <!-- layout_marg.. margenes normales -->
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Entrar"
+            android:id="@+id/btn_log"
+            android:onClick="btn_ingresar"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Registrarse"
+            android:id="@+id/btn_regi"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

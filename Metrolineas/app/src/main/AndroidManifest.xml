@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.metroapp.codering.metrolineas">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name=".servicio.Fireapp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Ma_registro"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <uses-sdk
+            android:minSdkVersion="15"
+            tools:overrideLibrary="com.firebase.ui"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDod7SkJFQR40P4VTPWr6J1eboko95v65k"/>
+
+        <!--
+   >
+        <receiver
+            android:name=".broadcastReceiver.LocationTrackerRestartBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:label="LocationLoggerServiceManager">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+   <
+        <service
+            android:name=".servicio.ActualizandoPosiciones"
+            android:enabled="true"
+            android:exported="true"/>
+        <service android:name=".servicio.gps_service"/>
+        <!
+        -->
+        <service android:name=".servicio.gps_service"/>
+
+        <activity android:name=".Ma_mapa"/>
+        <activity android:name=".Ma_trmetros">
+        </activity>
+        <activity android:name=".Ma_charlas">
+        </activity>
+        <activity android:name=".Ma_postear">
+        </activity>
+        <activity android:name=".Ma_mispasadas">
+        </activity>
+        <activity android:name=".Ma_nmenu">
+        </activity>
+        <activity android:name=".Ma_conductors">
+        </activity>
+    </application>
+
+</manifest>

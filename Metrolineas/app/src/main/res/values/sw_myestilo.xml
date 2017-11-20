@@ -1,0 +1,11 @@
+
+<resources>
+<style name="Switchtema" >
+
+    <item name="android:thumb">@drawable/sw_icon</item>
+    <item name="trackTint">#28b74c</item>
+    <!-- <item name="thumbTint">#6071e1</item> -->
+</style>
+
+    </resources>
+
